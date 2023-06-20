@@ -15,7 +15,7 @@ function writePassword() {
 
 function generatePassword() { 
   // ask user for length, store in variable here: 
-  let passwordLength = 10;
+  let passwordLength = askPasswordLength();
 
   // ask user for parameters:
   let useUpperCase = true;
@@ -59,6 +59,21 @@ function generatePassword() {
   }
   //return password
   console.log(password); 
+}
+
+function askPasswordLength() {
+  passwordLength = parseInt(prompt("How long do you want the password to be? (Enter a number between 8-128)"));
+
+  if(!passwordLength || passwordLength < 8 || passwordLenth > 128) {
+    alert("Password length is invalid. Please enter number between 8 - 128.")
+    return askPasswordLength();
+  }
+
+  return passwordLength;
+}
+
+function askPasswordCharOption() {
+  
 }
 
 // Add event listener to generate button
