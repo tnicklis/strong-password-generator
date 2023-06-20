@@ -66,6 +66,7 @@ function generatePassword() {
   return password;
 }
 
+//asks user for password length and checks to make sure its valid (between 8-128 chars)
 function askPasswordLength() {
   let passwordLength = parseInt(prompt("How long do you want the password to be? (Enter a number between 8-128)"));
   
@@ -77,6 +78,7 @@ function askPasswordLength() {
   return passwordLength;
 }
 
+//function to ask user for options. Parameter is the message, as defined in generatePassword function above.
 function askPasswordCharOption(passwordOptionMessage) {
   return confirm(passwordOptionMessage);
 }
