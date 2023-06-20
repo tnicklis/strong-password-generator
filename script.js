@@ -18,10 +18,10 @@ function generatePassword() {
   let passwordLength = askPasswordLength();
 
   // ask user for parameters:
-  let useUpperCase = true;
-  let useLowerCase = true;
-  let useNumericChar = true;
-  let useSpecialChar = true;
+  let useUpperCase = askPasswordCharOption("Use upper case characters?");
+  let useLowerCase = askPasswordCharOption("Use lower case characters?");
+  let useNumericChar = askPasswordCharOption("Use numbers?");
+  let useSpecialChar = askPasswordCharOption("Use special characters?");
 
   // storing options in arrays:
   let upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -48,6 +48,11 @@ function generatePassword() {
     valid = valid.concat(...specialChar);
   }
 
+  //if no options were selected, default is to use all lowercase letters. 
+  if (valid.length === 0) {
+    valid = valid.concat(...lowerCase);
+  }
+
   // setting empty password variable:
   let password = "";
 
@@ -58,13 +63,13 @@ function generatePassword() {
     password += newChar;
   }
   //return password
-  console.log(password); 
+  return password;
 }
 
 function askPasswordLength() {
-  passwordLength = parseInt(prompt("How long do you want the password to be? (Enter a number between 8-128)"));
-
-  if(!passwordLength || passwordLength < 8 || passwordLenth > 128) {
+  let passwordLength = parseInt(prompt("How long do you want the password to be? (Enter a number between 8-128)"));
+  
+  if (passwordLength < 8 || passwordLength > 128) {
     alert("Password length is invalid. Please enter number between 8 - 128.")
     return askPasswordLength();
   }
@@ -72,8 +77,8 @@ function askPasswordLength() {
   return passwordLength;
 }
 
-function askPasswordCharOption() {
-  
+function askPasswordCharOption(passwordOptionMessage) {
+  return confirm(passwordOptionMessage);
 }
 
 // Add event listener to generate button
