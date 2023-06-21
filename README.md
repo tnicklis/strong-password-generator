@@ -11,7 +11,7 @@ You can use this webpage to generate a random strong password by clicking the re
 
 ![Password Generator Screenshot](./assets/images/PasswordGeneratorFinishedProduct.png)
 
-Deployed Application here: 
+Deployed Application here: https://tnicklis.github.io/strong-password-generator/
 
 ## Credits 
 I used the following resoucres to complete this project: 
