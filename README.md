@@ -1,30 +1,25 @@
 # Strong Password Generator
 
 ## Description
-
 This web application is designed to create a strong password to reduce a user's risk of being hacked or having sensitive information stolen. Since every online account requires different strong password parameters, this applicaiton will ask the user which types of characters should be included. 
 
 ## Installation 
-
 You can view this code by exploring the files on GitHub or pulling them into VS Code via Git in the CLI.
 
 ## Usage 
-
 You can use this webpage to generate a random strong password by clicking the red 'Generate Password' button. The box will then populate with a strong password. Then simply copy and paste your password to use it! 
 
-   ```md
     ![Screenshot of Password Generator](.assets/images/Password%20Generator%20Sample%20%20Medium.jpeg)
-    ```
+
+Deployed Application here: 
 
 ## Credits 
-
 I used the following resoucres to complete this project: 
-- W3 Schools: https://www.w3schools.com/js/js_random.asp
-- Sabe: https://sabe.io/blog/javascript-yes-no-confirmation-box
-- Mozilla: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+W3 Schools: https://www.w3schools.com/js/js_random.asp
+Sabe: https://sabe.io/blog/javascript-yes-no-confirmation-box
+Mozilla: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
 ## License
-
 MIT License
 
 Copyright (c) [2023] [TylarNicklis]
