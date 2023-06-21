@@ -9,7 +9,7 @@ You can view this code by exploring the files on GitHub or pulling them into VS 
 ## Usage 
 You can use this webpage to generate a random strong password by clicking the red 'Generate Password' button. The box will then populate with a strong password. Then simply copy and paste your password to use it! 
 
-    ![Screenshot of Password Generator](.assets/images/Password%20Generator%20Sample%20%20Medium.jpeg)
+    ![Screenshot of Password Generator](/assets/images/Password%20Generator%20Sample%20%20Medium.jpeg)
 
 Deployed Application here: 
 
